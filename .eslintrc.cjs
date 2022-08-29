@@ -34,12 +34,17 @@ module.exports = {
         groups: ["builtin", "external", "internal", ["parent", "sibling"], "object", "type", "index"],
         pathGroups: [
           {
-            pattern: "react**",
+            pattern: "react",
             group: "external",
             position: "before",
           },
           {
-            pattern: "{@/components/**,@/pages/**}",
+            pattern: "@/components/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@/pages/**",
             group: "internal",
             position: "before",
           },
@@ -52,6 +57,7 @@ module.exports = {
         pathGroupsExcludedImportTypes: ["builtin"],
         alphabetize: {
           order: "asc",
+          caseInsensitive: true,
         },
         "newlines-between": "always",
       },
