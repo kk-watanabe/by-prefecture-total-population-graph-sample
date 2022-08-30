@@ -12,7 +12,7 @@ module.exports = {
     "plugin:import/typescript",
     "prettier",
   ],
-  ignorePatterns: ["node_modules/*", ".eslintrc.cjs"],
+  ignorePatterns: ["node_modules/*", ".eslintrc.cjs", "vitest.setup.ts", ".storybook/*", "vite.config.ts"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
