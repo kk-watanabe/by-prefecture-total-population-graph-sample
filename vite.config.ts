@@ -13,4 +13,9 @@ export default defineConfig({
       "@/": `${__dirname}/src/`,
     },
   },
+  test: {
+    globals: true,
+    environment: "happy-dom",
+    setupFiles: ["./vitest.setup.ts"],
+  },
 });
