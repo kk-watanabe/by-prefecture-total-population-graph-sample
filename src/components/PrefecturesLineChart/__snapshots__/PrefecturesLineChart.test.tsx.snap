@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`Readner Default components 1`] = `
+<div
+  class="recharts-responsive-container"
+  style="width: 100%; height: 600px;"
+/>
+`;

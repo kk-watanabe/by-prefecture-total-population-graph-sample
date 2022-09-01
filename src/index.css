@@ -17,6 +17,8 @@
   --fs-4xl: 2.25rem;
   /* 48px */
   --fs-5xl: 3rem;
+  /* White colors */
+  --color-white: #fff;
   /* Gray colors */
   --color-gray50: #f9fafb;
   --color-gray100: #f3f4f6;
@@ -28,5 +30,6 @@
   --color-gray700: #374151;
   --color-gray800: #1f2937;
   --color-gray900: #111827;
+  /* breakpoint */
   --breakpoint: 1025px;
 }
