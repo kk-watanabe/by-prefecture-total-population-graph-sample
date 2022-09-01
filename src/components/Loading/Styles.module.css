@@ -1,0 +1,39 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 2px solid transparent;
+  border-top-color: #0cf;
+  border-radius: 50%;
+  animation: spin 0.75s infinite linear;
+}
+
+.loading::before,
+.loading::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: none;
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  border-radius: inherit;
+  content: "";
+}
+
+.loading::before {
+  display: inline-block;
+  border-color: transparent;
+  border-top-color: #0cf;
+  animation: spin 1.5s infinite ease;
+}
