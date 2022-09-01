@@ -8,7 +8,6 @@ module.exports = {
     "plugin:import/recommended",
     "airbnb-base",
     "airbnb-typescript/base",
-    "plugin:storybook/recommended",
     "plugin:import/typescript",
     "prettier",
   ],
@@ -26,7 +25,7 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
+    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".ts", ".tsx"] }],
     "import/newline-after-import": ["error", { count: 1 }],
     "import/order": [
       "error",
@@ -68,17 +67,24 @@ module.exports = {
       "@typescript-eslint/parser": [".ts", ".tsx"],
     },
     "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+        project: "./src",
+      },
       node: {
+        paths: ["src"],
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     },
   },
   overrides: [
     {
-      files: ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      files: ["*.stories.@(ts|tsx|js)"],
+      extends: ["plugin:storybook/recommended"],
       rules: {
         "storybook/hierarchy-separator": "error",
         "storybook/default-exports": "off",
+        "import/no-default-export: off",
       },
     },
   ],
