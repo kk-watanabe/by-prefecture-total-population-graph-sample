@@ -24,38 +24,3 @@ describe("snapshots", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
-describe("renders", () => {
-  it("Readner Default components", () => {
-    render(<Default />);
-
-    expect(
-      screen.getByRole("heading", {
-        name: /Heading label/i,
-        level: 1,
-      })
-    ).toBeInTheDocument();
-  });
-
-  it("Readner ChangeTag components", () => {
-    render(<ChangeTag />);
-
-    expect(
-      screen.getByRole("heading", {
-        name: /Heading label/i,
-        level: 4,
-      })
-    ).toBeInTheDocument();
-  });
-
-  it("Readner ChangeSize components", () => {
-    render(<ChangeSize />);
-
-    expect(
-      screen.getByRole("heading", {
-        name: /Heading label/i,
-        level: 1,
-      })
-    ).toBeInTheDocument();
-  });
-});
