@@ -2,7 +2,7 @@
 
 exports[`snapshots > Readner ChangeSize components 1`] = `
 <h1
-  class="_heading_e8u9f_1 _heading--size-2xl_e8u9f_13"
+  class="_heading_apj7y_1 _heading--size-2xl_apj7y_13"
 >
   Heading label
 </h1>
@@ -10,7 +10,7 @@ exports[`snapshots > Readner ChangeSize components 1`] = `
 
 exports[`snapshots > Readner ChangeTag components 1`] = `
 <h4
-  class="_heading_e8u9f_1 _heading--size-4xl_e8u9f_7"
+  class="_heading_apj7y_1 _heading--size-4xl_apj7y_7"
 >
   Heading label
 </h4>
@@ -18,7 +18,7 @@ exports[`snapshots > Readner ChangeTag components 1`] = `
 
 exports[`snapshots > Readner Default components 1`] = `
 <h1
-  class="_heading_e8u9f_1 _heading--size-4xl_e8u9f_7"
+  class="_heading_apj7y_1 _heading--size-4xl_apj7y_7"
 >
   Heading label
 </h1>
