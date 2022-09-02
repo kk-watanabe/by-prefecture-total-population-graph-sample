@@ -3,7 +3,7 @@ import { expect, test, vi } from "vitest";
 
 import { Prefectures } from "./type";
 
-import { getPrefectures } from ".";
+import { usePrefectures } from ".";
 
 vi.mock("swr");
 
@@ -24,7 +24,7 @@ test("success", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: mockData });
 
-  const { prefectures, isLoading, isError } = getPrefectures();
+  const { prefectures, isLoading, isError } = usePrefectures();
   expect(prefectures).toEqual(mockData.result);
   expect(isLoading).toEqual(false);
   expect(isError).toEqual(undefined);
@@ -34,7 +34,7 @@ test("isLoading = true", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: undefined });
 
-  const { prefectures, isLoading, isError } = getPrefectures();
+  const { prefectures, isLoading, isError } = usePrefectures();
   expect(prefectures).toEqual([]);
   expect(isLoading).toEqual(true);
   expect(isError).toEqual(undefined);
@@ -44,7 +44,7 @@ test("error", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: undefined, error: "Server Error" });
 
-  const { prefectures, isLoading, isError } = getPrefectures();
+  const { prefectures, isLoading, isError } = usePrefectures();
   expect(prefectures).toEqual([]);
   expect(isLoading).toEqual(false);
   expect(isError).toEqual("Server Error");
