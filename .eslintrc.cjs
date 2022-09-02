@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
     "airbnb-base",
     "airbnb-typescript/base",
     "plugin:import/typescript",
@@ -61,6 +62,8 @@ module.exports = {
         "newlines-between": "always",
       },
     ],
+    "import/prefer-default-export": "off",
+    "react-hooks/exhaustive-deps": ["error"],
   },
   settings: {
     "import/parsers": {
@@ -84,7 +87,7 @@ module.exports = {
       rules: {
         "storybook/hierarchy-separator": "error",
         "storybook/default-exports": "off",
-        "import/no-default-export: off",
+        "import/no-default-export": "off",
       },
     },
   ],
