@@ -13,7 +13,7 @@
   width: 44px;
   height: 44px;
   border: 2px solid transparent;
-  border-top-color: #0cf;
+  border-top-color: var(--color-gray400);
   border-radius: 50%;
   animation: spin 0.75s infinite linear;
 }
@@ -34,6 +34,6 @@
 .loading::before {
   display: inline-block;
   border-color: transparent;
-  border-top-color: #0cf;
+  border-top-color: var(--color-gray400);
   animation: spin 1.5s infinite ease;
 }
