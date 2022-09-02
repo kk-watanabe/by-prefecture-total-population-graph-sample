@@ -5,154 +5,154 @@ type PrefColor = {
 
 const PrefColorData: PrefColor[] = [
   {
-    /** 北海道 Indigo 900 */
+    /** 北海道 Violet 800 */
     prefCode: 1,
-    colorCode: "#312e81",
+    colorCode: "#5b21b6",
   },
   {
-    /** 青森県 Blue 900 */
+    /** 青森県 Blue 800 */
     prefCode: 2,
-    colorCode: "#1e3a8a",
-  },
-  {
-    /** 岩手県 Blue 800 */
-    prefCode: 3,
     colorCode: "#1e40af",
   },
   {
-    /** 宮城県 Blue 700 */
-    prefCode: 4,
+    /** 岩手県 Blue 700 */
+    prefCode: 3,
     colorCode: "#1d4ed8",
   },
   {
-    /** 秋田県 Blue 600 */
-    prefCode: 5,
+    /** 宮城県 Blue 600 */
+    prefCode: 4,
     colorCode: "#2563eb",
   },
   {
-    /** 山形県 Blue 500 */
-    prefCode: 6,
-    colorCode: "3b82f6",
+    /** 秋田県 Blue 500 */
+    prefCode: 5,
+    colorCode: "#3b82f6",
   },
   {
-    /** 福島県 Blue 400 */
-    prefCode: 7,
+    /** 山形県 Blue 400 */
+    prefCode: 6,
     colorCode: "#60a5fa",
   },
   {
-    /** 茨城県 Sky 900 */
+    /** 福島県 Blue 300 */
+    prefCode: 7,
+    colorCode: "#93c5fd",
+  },
+  {
+    /** 茨城県 Sky 600 */
     prefCode: 8,
-    colorCode: "#0c4a6e",
+    colorCode: "#0284c7",
   },
   {
-    /** 栃木県 Sky 800 */
+    /** 栃木県 Sky 500 */
     prefCode: 9,
-    colorCode: "#075985",
+    colorCode: "#0ea5e9",
   },
   {
-    /** 群馬県 Sky 700 */
+    /** 群馬県 Sky 400 */
     prefCode: 10,
-    colorCode: "#0369a1",
+    colorCode: "#38bdf8",
   },
   {
-    /** 埼玉県 Cyan 900 */
+    /** 埼玉県 Cyan 700 */
     prefCode: 11,
-    colorCode: "#164e63",
-  },
-  {
-    /** 千葉県 Cyan 800 */
-    prefCode: 12,
-    colorCode: "#155e75",
-  },
-  {
-    /** 東京都 Cyan 700 */
-    prefCode: 13,
     colorCode: "#0e7490",
   },
   {
-    /** 神奈川県 Cyan 600 */
-    prefCode: 14,
+    /** 千葉県 Cyan 600 */
+    prefCode: 12,
     colorCode: "#0891b2",
   },
   {
-    /** 新潟県 Teal 900 */
+    /** 東京都 Cyan 500 */
+    prefCode: 13,
+    colorCode: "#06b6d4",
+  },
+  {
+    /** 神奈川県 Cyan 400 */
+    prefCode: 14,
+    colorCode: "#22d3ee",
+  },
+  {
+    /** 新潟県 Teal 700 */
     prefCode: 15,
-    colorCode: "#134e4a",
+    colorCode: "#0f766e",
   },
   {
-    /** 富山県 Teal 800 */
+    /** 富山県 Teal 600 */
     prefCode: 16,
-    colorCode: "#155e75",
-  },
-  {
-    /** 石川県 Teal 700 */
-    prefCode: 17,
-    colorCode: "#0e7490",
-  },
-  {
-    /** 福井県 Teal 600 */
-    prefCode: 18,
     colorCode: "#0d9488",
   },
   {
-    /** 山梨県 Emerald 900 */
+    /** 石川県 Teal 500 */
+    prefCode: 17,
+    colorCode: "#14b8a6",
+  },
+  {
+    /** 福井県 Teal 400 */
+    prefCode: 18,
+    colorCode: "#2dd4bf",
+  },
+  {
+    /** 山梨県 Emerald 700 */
     prefCode: 19,
-    colorCode: "#064e3b",
-  },
-  {
-    /** 長野県 Emerald 800 */
-    prefCode: 20,
-    colorCode: "#065f46",
-  },
-  {
-    /** 岐阜県 Emerald 700 */
-    prefCode: 21,
     colorCode: "#047857",
   },
   {
-    /** 静岡県 Emerald 600 */
-    prefCode: 22,
+    /** 長野県 Emerald 600 */
+    prefCode: 20,
     colorCode: "#059669",
   },
   {
-    /** 愛知県 Emerald 500 */
-    prefCode: 23,
+    /** 岐阜県 Emerald 500 */
+    prefCode: 21,
     colorCode: "#10b981",
   },
   {
-    /** 三重県 Green 900 */
+    /** 静岡県 Emerald 400 */
+    prefCode: 22,
+    colorCode: "#34d399",
+  },
+  {
+    /** 愛知県 Emerald 300 */
+    prefCode: 23,
+    colorCode: "#6ee7b7",
+  },
+  {
+    /** 三重県 Green 700 */
     prefCode: 24,
-    colorCode: "#14532d",
-  },
-  {
-    /** 滋賀県 Green 800 */
-    prefCode: 25,
-    colorCode: "#166534",
-  },
-  {
-    /** 京都府 Green 700 */
-    prefCode: 26,
     colorCode: "#15803d",
   },
   {
-    /** 大阪府 Green 600 */
-    prefCode: 27,
+    /** 滋賀県 Green 600 */
+    prefCode: 25,
     colorCode: "#16a34a",
   },
   {
-    /** 兵庫県 Lime 900 */
+    /** 京都府 Green 500 */
+    prefCode: 26,
+    colorCode: "#22c55e",
+  },
+  {
+    /** 大阪府 Green 400 */
+    prefCode: 27,
+    colorCode: "#4ade80",
+  },
+  {
+    /** 兵庫県 Lime 500 */
     prefCode: 28,
-    colorCode: "#365314",
+    colorCode: "#84cc16",
   },
   {
-    /** 奈良県 Lime 800 */
+    /** 奈良県 Lime 400 */
     prefCode: 29,
-    colorCode: "#3f6212",
+    colorCode: "#a3e635",
   },
   {
-    /** 和歌山県 Lime 700 */
+    /** 和歌山県 Lime 300 */
     prefCode: 30,
-    colorCode: "#4d7c0f",
+    colorCode: "#bef264",
   },
   {
     /** 鳥取県 Yellow 900 */
@@ -180,64 +180,64 @@ const PrefColorData: PrefColor[] = [
     colorCode: "#eab308",
   },
   {
-    /** 徳島県 Orange 900 */
+    /** 徳島県 Orange 700 */
     prefCode: 36,
-    colorCode: "#7c2d12",
-  },
-  {
-    /** 香川県 Orange 800 */
-    prefCode: 37,
-    colorCode: "#9a3412",
-  },
-  {
-    /** 愛媛県 Orange 700 */
-    prefCode: 38,
     colorCode: "#c2410c",
   },
   {
-    /** 高知県 Orange 600 */
-    prefCode: 39,
+    /** 香川県 Orange 600 */
+    prefCode: 37,
     colorCode: "#ea580c",
   },
   {
-    /** 福岡県 Red 900 */
+    /** 愛媛県 Orange 500 */
+    prefCode: 38,
+    colorCode: "#f97316",
+  },
+  {
+    /** 高知県 Orange 400 */
+    prefCode: 39,
+    colorCode: "#fb923c",
+  },
+  {
+    /** 福岡県 Red 700 */
     prefCode: 40,
-    colorCode: "#7f1d1d",
-  },
-  {
-    /** 佐賀県 Red 800 */
-    prefCode: 41,
-    colorCode: "#991b1b",
-  },
-  {
-    /** 長崎県 Red 700 */
-    prefCode: 42,
     colorCode: "#b91c1c",
   },
   {
-    /** 熊本県 Red 600 */
-    prefCode: 43,
+    /** 佐賀県 Red 600 */
+    prefCode: 41,
     colorCode: "#dc2626",
   },
   {
-    /** 大分県 Rose 900 */
+    /** 長崎県 Red 500 */
+    prefCode: 42,
+    colorCode: "#ef4444",
+  },
+  {
+    /** 熊本県 Red 400 */
+    prefCode: 43,
+    colorCode: "#f87171",
+  },
+  {
+    /** 大分県 Rose 700 */
     prefCode: 44,
-    colorCode: "#881337",
-  },
-  {
-    /** 宮崎県 Rose 800 */
-    prefCode: 45,
-    colorCode: "#9f1239",
-  },
-  {
-    /** 鹿児島県 Rose 700 */
-    prefCode: 46,
     colorCode: "#be123c",
   },
   {
-    /** 沖縄県 Pink 700 */
+    /** 宮崎県 Rose 600 */
+    prefCode: 45,
+    colorCode: "#e11d48",
+  },
+  {
+    /** 鹿児島県 Rose 500 */
+    prefCode: 46,
+    colorCode: "#f43f5e",
+  },
+  {
+    /** 沖縄県 Pink 600 */
     prefCode: 47,
-    colorCode: "#be185d",
+    colorCode: "#db2777",
   },
 ];
 
