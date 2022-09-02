@@ -23,7 +23,8 @@ test("call fetchers", async () => {
   fetchMock.mock(mockUrl2, {
     json: "success2",
   });
-  const result = await fetchers(["test1", "test2"]);
+  const paths = ["test1", "test2"];
+  const result = await fetchers(...paths);
 
   expect(result[0].json).toEqual("success1");
   expect(result[1].json).toEqual("success2");

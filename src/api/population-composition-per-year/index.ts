@@ -1,15 +1,25 @@
 import useSWR from "swr";
 
-import { fetcher, defaultSWROption } from "../index";
-import { PerYear, YaerData } from "./type";
+import { fetchers, defaultSWROption } from "../fetcher";
+import { PerYearResult } from "./type";
 
 export const path = "api/v1/population/composition/perYear";
 
-export const getPopulationCompositionPerYear = (prefCode: number) => {
-  const prefCodesPath = `${path}?prefCode=${prefCode}`;
-  const { data, error } = useSWR<PerYear>(prefCodesPath, fetcher, defaultSWROption);
+export const usePopulationCompositionPerYear = (prefCodes: number[]) => {
+  const prefCodesPaths = prefCodes.map((c) => `${path}?prefCode=${c}`);
+  const { data, error } = useSWR(prefCodesPaths, fetchers, defaultSWROption);
 
-  const populationStructure: YaerData[] = data?.result?.data[0].data ?? [];
+  const populationStructure: PerYearResult[] = data
+    ? prefCodes.map((c, i) => {
+        const dataValue = data[i].result?.data[0].data;
+        const result: PerYearResult = {
+          id: c,
+          data: dataValue,
+        };
+
+        return result;
+      })
+    : [];
   const isLoading = !error && !data;
   const isError = error;
 

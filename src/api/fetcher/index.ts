@@ -8,7 +8,7 @@ const getResJson = (path: string) => fetch(`${RESAS_ENDPOINT}/${path}`, options)
 
 export const fetcher = (path: string) => getResJson(path);
 
-export const fetchers = (paths: string[]) => Promise.all(paths.map(getResJson));
+export const fetchers = (...paths: string[]) => Promise.all(paths.map(getResJson));
 
 export const defaultSWROption = {
   revalidateIfStale: false,

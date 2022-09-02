@@ -3,7 +3,7 @@ import { expect, test, vi } from "vitest";
 
 import { PerYear, PerYearData } from "./type";
 
-import { getPopulationCompositionPerYear } from ".";
+import { usePopulationCompositionPerYear } from ".";
 
 vi.mock("swr");
 
@@ -44,10 +44,13 @@ test("success", () => {
     },
   };
   // @ts-ignore
-  useSWR.mockReturnValue({ data: mockData });
+  useSWR.mockReturnValue({ data: [mockData, mockData] });
 
-  const { populationStructure, isLoading, isError } = getPopulationCompositionPerYear(1);
-  expect(populationStructure).toEqual(mockData.result.data[0].data);
+  const { populationStructure, isLoading, isError } = usePopulationCompositionPerYear([1, 10]);
+  expect(populationStructure).toEqual([
+    { id: 1, data: mockData.result.data[0].data },
+    { id: 10, data: mockData.result.data[0].data },
+  ]);
   expect(isLoading).toEqual(false);
   expect(isError).toEqual(undefined);
 });
@@ -56,7 +59,7 @@ test("isLoading = true", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: undefined });
 
-  const { populationStructure, isLoading, isError } = getPopulationCompositionPerYear(1);
+  const { populationStructure, isLoading, isError } = usePopulationCompositionPerYear([1, 10]);
   expect(populationStructure).toEqual([]);
   expect(isLoading).toEqual(true);
   expect(isError).toEqual(undefined);
@@ -66,7 +69,7 @@ test("error", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: undefined, error: "Server Error" });
 
-  const { populationStructure, isLoading, isError } = getPopulationCompositionPerYear(1);
+  const { populationStructure, isLoading, isError } = usePopulationCompositionPerYear([1, 10]);
   expect(populationStructure).toEqual([]);
   expect(isLoading).toEqual(false);
   expect(isError).toEqual("Server Error");
