@@ -33,3 +33,9 @@
   /* breakpoint */
   --breakpoint: 1025px;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
