@@ -243,6 +243,22 @@ const PrefColorData: PrefColor[] = [
   },
 ];
 
+export function* range(start: number, end: number) {
+  for (let i = start; i < end; i += 1) {
+    yield i;
+  }
+}
+
+export const hokkaidoAndTouhokuCodes = [...range(1, 8)];
+export const kantoCodes = [...range(8, 15)];
+export const tyubuCodes = [...range(15, 24)];
+export const kinkiCodes = [...range(23, 31)];
+export const tyugokuAndshikokuCodes = [...range(31, 40)];
+export const kyusyuAndOkinawaCodes = [...range(40, 48)];
+
+export const getRangePrefectures = (prefectures: Pref[], rangePrefCodes: number[]) =>
+  prefectures.filter((p) => rangePrefCodes.includes(p.prefCode));
+
 export const getPrefColor = (prefCode: number) => PrefColorData.find((d) => d.prefCode === prefCode)?.colorCode;
 
 /**
