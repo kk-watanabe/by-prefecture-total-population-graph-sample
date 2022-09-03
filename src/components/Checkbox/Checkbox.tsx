@@ -1,4 +1,4 @@
-import { ChangeEvent, useState, useCallback } from "react";
+import { ChangeEvent, useState, useCallback, useEffect } from "react";
 
 import styles from "./Styles.module.css";
 
@@ -34,13 +34,17 @@ export const Checkbox = (props: CheckboxProps) => {
     [onChange]
   );
 
+  useEffect(() => {
+    setIsChecked(props.checked);
+  }, [props.checked]);
+
   return (
     <label className={styles.checkbox} htmlFor={props.id}>
       <input
         type="checkbox"
         value={props.value}
         id={props.id}
-        defaultChecked={isChecked}
+        checked={isChecked}
         onChange={handleChange}
         className={styles.checkbox__input}
       />

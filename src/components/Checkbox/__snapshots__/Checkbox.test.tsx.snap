@@ -2,26 +2,26 @@
 
 exports[`snapshots > Readner Checked components 1`] = `
 <label
-  class="_checkbox_qo6px_1"
+  class="_checkbox_1py7j_1"
   for="checkbox-id1"
 >
   <input
     checked=""
-    class="_checkbox__input_qo6px_10"
+    class="_checkbox__input_1py7j_10"
     id="checkbox-id1"
     type="checkbox"
     value="1"
   />
   <span
-    class="_checkbox__box_qo6px_19 "
+    class="_checkbox__box_1py7j_19 "
     style="background-color: red; border-color: red;"
   >
     <span
-      class="_checkbox__check_qo6px_29"
+      class="_checkbox__check_1py7j_30"
     />
   </span>
   <span
-    class="_checkbox__label_qo6px_40 _checkbox__label--checked_qo6px_47"
+    class="_checkbox__label_1py7j_41 _checkbox__label--checked_1py7j_48"
   >
     Checkbox label
   </span>
@@ -30,24 +30,24 @@ exports[`snapshots > Readner Checked components 1`] = `
 
 exports[`snapshots > Readner Default components 1`] = `
 <label
-  class="_checkbox_qo6px_1"
+  class="_checkbox_1py7j_1"
   for="checkbox-id1"
 >
   <input
-    class="_checkbox__input_qo6px_10"
+    class="_checkbox__input_1py7j_10"
     id="checkbox-id1"
     type="checkbox"
     value="1"
   />
   <span
-    class="_checkbox__box_qo6px_19 "
+    class="_checkbox__box_1py7j_19 "
   >
     <span
-      class="_checkbox__check_qo6px_29"
+      class="_checkbox__check_1py7j_30"
     />
   </span>
   <span
-    class="_checkbox__label_qo6px_40 "
+    class="_checkbox__label_1py7j_41 "
   >
     Checkbox label
   </span>

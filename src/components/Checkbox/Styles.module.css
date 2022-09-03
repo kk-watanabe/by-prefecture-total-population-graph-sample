@@ -24,6 +24,7 @@
   border: 1px solid var(--color-gray300);
   border-radius: 4px;
   background-color: var(--color-white);
+  transition: border-color 0.1s ease;
 }
 
 .checkbox__check {
@@ -46,4 +47,9 @@
 
 .checkbox__label--checked {
   color: var(--color-gray900);
+}
+
+/* hover */
+.checkbox:hover .checkbox__box {
+  border-color: var(--color-gray500);
 }
