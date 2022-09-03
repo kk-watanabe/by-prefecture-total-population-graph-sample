@@ -1,8 +1,10 @@
 import "reset-css";
-import "./App.css";
+import { PopulationComposition } from "@/pages/PopulationComposition";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => (
+  <div>
+    <PopulationComposition />
+  </div>
+);
 
 export default App;

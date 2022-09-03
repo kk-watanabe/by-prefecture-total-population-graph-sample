@@ -1,0 +1,70 @@
+// Vitest Snapshot v1
+
+exports[`snapshots > Readner Default components 1`] = `
+<div
+  class="_population-composition_o3b41_1"
+>
+  <h1
+    class="_heading_apj7y_1 _heading--size-4xl_apj7y_7"
+  >
+    都道府県別人口構成
+  </h1>
+  <div
+    class="_population-composition__content_o3b41_14"
+  >
+    <div
+      class="_error-content_rl669_1"
+    >
+      読み込みに失敗しました。
+      <br />
+      更新をお試しください。
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshots > Readner Error components 1`] = `
+<div
+  class="_population-composition_o3b41_1"
+>
+  <h1
+    class="_heading_apj7y_1 _heading--size-4xl_apj7y_7"
+  >
+    都道府県別人口構成
+  </h1>
+  <div
+    class="_population-composition__content_o3b41_14"
+  >
+    <div
+      class="_error-content_rl669_1"
+    >
+      読み込みに失敗しました。
+      <br />
+      更新をお試しください。
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshots > Readner Loading components 1`] = `
+<div
+  class="_population-composition_o3b41_1"
+>
+  <h1
+    class="_heading_apj7y_1 _heading--size-4xl_apj7y_7"
+  >
+    都道府県別人口構成
+  </h1>
+  <div
+    class="_population-composition__content_o3b41_14"
+  >
+    <div
+      class="_error-content_rl669_1"
+    >
+      読み込みに失敗しました。
+      <br />
+      更新をお試しください。
+    </div>
+  </div>
+</div>
+`;

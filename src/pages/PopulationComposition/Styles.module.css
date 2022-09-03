@@ -1,0 +1,16 @@
+.population-composition-content__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.population-composition {
+  margin: 0 auto;
+  padding: 48px 24px;
+  max-width: 1280px;
+}
+
+.population-composition__content {
+  margin-top: 48px;
+}
