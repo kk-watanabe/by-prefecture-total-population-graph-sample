@@ -1,19 +1,21 @@
 import { composeStories } from "@storybook/testing-react";
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { vi } from "vitest";
 
 import * as stories from "./PrefecturesLineChart.stories";
 
 const { Default } = composeStories(stories);
 
 test("Readner Default components", async () => {
-  const { container } = render(<Default />);
+  window.ResizeObserver =
+    window.ResizeObserver ||
+    vi.fn().mockImplementation(() => ({
+      unobserve: vi.fn(),
+      observe: vi.fn(),
+      disconnect: vi.fn(),
+    }));
 
-  await waitFor(
-    () => {
-      expect(container.firstChild).toMatchSnapshot();
-    },
-    {
-      interval: 10000,
-    }
-  );
+  const { container } = await render(<Default />);
+
+  expect(container.firstChild).toMatchSnapshot();
 });

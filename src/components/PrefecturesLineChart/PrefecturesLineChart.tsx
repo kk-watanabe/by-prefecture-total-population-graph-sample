@@ -1,31 +1,28 @@
 import { ResponsiveContainer, LineChart, CartesianGrid, Line, Label, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
+import { PerYearResult } from "@/api/population-composition-per-year/type";
 import { Pref } from "@/api/prefectures/type";
-import getPrefColor from "@/utils/prefectures-util";
-
-export type PrefecturesLineChartData = {
-  year: string;
-  [key: number]: number;
-};
+import { getPrefColor } from "@/utils/prefectures-util";
 
 export interface PrefecturesLineChartProps {
   height: number;
-  data: PrefecturesLineChartData[];
+  data: PerYearResult[];
   selectedPrefectures: Pref[];
 }
 
 export const PrefecturesLineChart = (props: PrefecturesLineChartProps) => (
   <ResponsiveContainer width="100%" height={props.height}>
-    <LineChart data={props.data} margin={{ top: 80, right: 80, left: 10, bottom: 20 }}>
+    <LineChart data={props.data} margin={{ top: 80, right: 0, left: 80, bottom: 40 }}>
       <CartesianGrid />
       <XAxis dataKey="year" tickSize={15}>
-        <Label value="年度" position="right" offset={40} />
+        <Label value="年度" position="insideBottom" offset={-30} />
       </XAxis>
       <YAxis tickSize={15}>
-        <Label value="人口数" position="top" offset={40} />
+        <Label value="人口数" position="insideLeft" offset={-60} angle={-90} />
       </YAxis>
       <Tooltip />
-      <Legend wrapperStyle={{ bottom: 0 }} />
+      <Legend align="center" verticalAlign="top" wrapperStyle={{ top: 0 }} />
+
       {props.selectedPrefectures.map((p) => (
         <Line
           key={p.prefCode}
