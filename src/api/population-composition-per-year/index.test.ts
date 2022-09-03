@@ -6,17 +6,18 @@ import { PerYear, PerYearData } from "./type";
 import { usePopulationCompositionPerYear } from ".";
 
 vi.mock("swr");
+vi.useFakeTimers().setSystemTime(new Date("2022-07-22"));
 
-test("success", () => {
+test("success", async () => {
   const perYearData1: PerYearData = {
     label: "perYearData1",
     data: [
       {
-        year: 2015,
+        year: 2010,
         value: 1000,
       },
       {
-        year: 2016,
+        year: 2020,
         value: 1100,
       },
     ],
@@ -25,14 +26,12 @@ test("success", () => {
     label: "perYearData2",
     data: [
       {
-        year: 2015,
-        value: 1000,
-        rate: 11.1,
+        year: 2010,
+        value: 10200,
       },
       {
-        year: 2016,
-        value: 1100,
-        rate: 11.2,
+        year: 2020,
+        value: 11200,
       },
     ],
   };
@@ -46,10 +45,18 @@ test("success", () => {
   // @ts-ignore
   useSWR.mockReturnValue({ data: [mockData, mockData] });
 
-  const { populationStructure, isLoading, isError } = usePopulationCompositionPerYear([1, 10]);
+  const { populationStructure, isLoading, isError } = await usePopulationCompositionPerYear([1, 10]);
   expect(populationStructure).toEqual([
-    { id: 1, data: mockData.result.data[0].data },
-    { id: 10, data: mockData.result.data[0].data },
+    {
+      "1": 1000,
+      "10": 1000,
+      year: "2010年",
+    },
+    {
+      "1": 1100,
+      "10": 1100,
+      year: "2020年",
+    },
   ]);
   expect(isLoading).toEqual(false);
   expect(isError).toEqual(undefined);

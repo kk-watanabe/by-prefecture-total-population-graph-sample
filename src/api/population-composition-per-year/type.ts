@@ -18,6 +18,6 @@ export type PerYear = {
 };
 
 export type PerYearResult = {
-  id: number;
-  data: YaerData[];
+  year: string;
+  [x: number]: number;
 };
