@@ -1,3 +1,5 @@
+import { Pref } from "@/api/prefectures/type";
+
 type PrefColor = {
   prefCode: number;
   colorCode: string;
@@ -241,6 +243,20 @@ const PrefColorData: PrefColor[] = [
   },
 ];
 
-const getPrefColor = (prefCode: number) => PrefColorData.find((d) => d.prefCode === prefCode)?.colorCode;
+export const getPrefColor = (prefCode: number) => PrefColorData.find((d) => d.prefCode === prefCode)?.colorCode;
 
-export default getPrefColor;
+/**
+ * array に value が含まれていたら削除した array を返す
+ * array に value が無い場合追加した array を返す
+ * @param array
+ * @param value
+ * @returns
+ */
+export const getPrefecturesWithValueAddOrReduce = (prefectures: Pref[], value: Pref): Pref[] => {
+  if (prefectures.some((p) => p.prefCode === value.prefCode)) {
+    const result = prefectures.filter((p) => p.prefCode !== value.prefCode);
+    return result;
+  }
+
+  return [...prefectures, value];
+};
