@@ -1,0 +1,23 @@
+.customT-tooltip {
+  padding: 16px;
+  border: 1px solid var(--color-gray300);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customT-tooltip__label {
+  color: var(--color-gray700);
+  font-weight: bold;
+  font-size: var(--fs-sm);
+}
+
+.customT-tooltip__values {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  max-width: 280px;
+  font-size: var(--fs-xs);
+
+  gap: 8px;
+}
