@@ -1,3 +1,4 @@
+import { prefecturesMock } from "../__mock__";
 import { PrefecturesSelecter } from "./PrefecturesSelecter";
 
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
@@ -12,34 +13,7 @@ export default {
 
 const Template: ComponentStory<typeof PrefecturesSelecter> = (args) => <PrefecturesSelecter {...args} />;
 
-const prefectures = [
-  {
-    prefCode: 1,
-    prefName: "北海道",
-  },
-  {
-    prefCode: 14,
-    prefName: "神奈川県",
-  },
-  {
-    prefCode: 15,
-    prefName: "新潟県",
-  },
-  {
-    prefCode: 16,
-    prefName: "富山県",
-  },
-  {
-    prefCode: 17,
-    prefName: "石川県",
-  },
-  {
-    prefCode: 47,
-    prefName: "沖縄県",
-  },
-];
-
 export const Default = Template.bind({});
 Default.args = {
-  prefectures,
+  prefectures: prefecturesMock.result,
 };

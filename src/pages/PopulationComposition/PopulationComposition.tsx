@@ -30,18 +30,6 @@ const PopulationCompositionContent = () => {
     );
   }
 
-  if (prefectures.length === 0) {
-    return (
-      <ErrorContent>
-        <>
-          読み込みに失敗しました。
-          <br />
-          更新をお試しください。
-        </>
-      </ErrorContent>
-    );
-  }
-
   return <PrefecturesContent prefectures={prefectures} />;
 };
 

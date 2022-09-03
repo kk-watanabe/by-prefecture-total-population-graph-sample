@@ -31,8 +31,8 @@ describe("onChange", () => {
             prefName: "北海道",
           },
           {
-            prefCode: 16,
-            prefName: "富山県",
+            prefCode: 4,
+            prefName: "宮城県",
           },
         ]);
       });
