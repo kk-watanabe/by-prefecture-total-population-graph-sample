@@ -1,0 +1,160 @@
+// Vitest Snapshot v1
+
+exports[`snapshots > Readner Default components 1`] = `
+<ul
+  class="_prefectures-selecter_gpygm_1"
+>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item0"
+    >
+      <input
+        checked=""
+        class="_checkbox__input_qo6px_10"
+        id="item0"
+        type="checkbox"
+        value="1"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+        style="background-color: rgb(91, 33, 182); border-color: #5b21b6;"
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 _checkbox__label--checked_qo6px_47"
+      >
+        北海道
+      </span>
+    </label>
+  </li>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item1"
+    >
+      <input
+        class="_checkbox__input_qo6px_10"
+        id="item1"
+        type="checkbox"
+        value="14"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 "
+      >
+        神奈川県
+      </span>
+    </label>
+  </li>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item2"
+    >
+      <input
+        class="_checkbox__input_qo6px_10"
+        id="item2"
+        type="checkbox"
+        value="15"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 "
+      >
+        新潟県
+      </span>
+    </label>
+  </li>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item3"
+    >
+      <input
+        class="_checkbox__input_qo6px_10"
+        id="item3"
+        type="checkbox"
+        value="16"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 "
+      >
+        富山県
+      </span>
+    </label>
+  </li>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item4"
+    >
+      <input
+        class="_checkbox__input_qo6px_10"
+        id="item4"
+        type="checkbox"
+        value="17"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 "
+      >
+        石川県
+      </span>
+    </label>
+  </li>
+  <li>
+    <label
+      class="_checkbox_qo6px_1"
+      for="item5"
+    >
+      <input
+        class="_checkbox__input_qo6px_10"
+        id="item5"
+        type="checkbox"
+        value="47"
+      />
+      <span
+        class="_checkbox__box_qo6px_19 "
+      >
+        <span
+          class="_checkbox__check_qo6px_29"
+        />
+      </span>
+      <span
+        class="_checkbox__label_qo6px_40 "
+      >
+        沖縄県
+      </span>
+    </label>
+  </li>
+</ul>
+`;
