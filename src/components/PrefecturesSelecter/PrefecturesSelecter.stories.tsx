@@ -3,7 +3,7 @@ import { PrefecturesSelecter } from "./PrefecturesSelecter";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "PrefecturesSelecter",
+  title: "components/PrefecturesSelecter",
   component: PrefecturesSelecter,
   argTypes: {
     onChange: { action: "changed" },

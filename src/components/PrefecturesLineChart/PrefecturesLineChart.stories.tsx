@@ -3,7 +3,7 @@ import { PrefecturesLineChart } from "./PrefecturesLineChart";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "PrefecturesLineChart",
+  title: "components/PrefecturesLineChart",
   component: PrefecturesLineChart,
 } as ComponentMeta<typeof PrefecturesLineChart>;
 

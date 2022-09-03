@@ -3,7 +3,7 @@ import { ErrorContent } from "./ErrorContent";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "ErrorContent",
+  title: "components/ErrorContent",
   component: ErrorContent,
 } as ComponentMeta<typeof ErrorContent>;
 

@@ -12,7 +12,7 @@ import { PrefecturesContent } from "./PrefecturesContent";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "PrefecturesContent",
+  title: "components/PrefecturesContent",
   component: PrefecturesContent,
 } as ComponentMeta<typeof PrefecturesContent>;
 

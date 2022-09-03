@@ -3,7 +3,7 @@ import { Checkbox } from "./Checkbox";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "Checkbox",
+  title: "components/Checkbox",
   component: Checkbox,
   argTypes: {
     onChange: { action: "changed" },

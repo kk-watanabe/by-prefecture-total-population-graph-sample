@@ -3,7 +3,7 @@ import { Loading } from "./Loading";
 import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
-  title: "Loading",
+  title: "components/Loading",
   component: Loading,
 } as ComponentMeta<typeof Loading>;
 
