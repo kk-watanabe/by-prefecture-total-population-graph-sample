@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`snapshots > Readner Default components 1`] = `
+<div
+  class="_error-content_rl669_1"
+>
+  エラーを表示します。
+  <br />
+  エラーを表示します。
+</div>
+`;
